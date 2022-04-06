@@ -10,7 +10,11 @@ public class programa {
 		Scanner leitor = new Scanner(arquivo);
 		
 		int grupoA = 0;
-		
+		int grupoB = 0;
+		int grupoC = 0;
+		int grupoD = 0;
+		int grupoE = 0;
+		int grupoF = 0;
 		
 		while(leitor.hasNext()) {
 			String linha = leitor.nextLine();
@@ -35,8 +39,46 @@ public class programa {
 				//System.out.println(grupoA);
 			}
 			
+			if (dadosLinha[0].equals("B")) {
+				//System.out.println(dadosLinha[1]);
+				int valor = Integer.parseInt(dadosLinha[1]);
+				grupoB =  grupoB + valor;
+				//System.out.println(grupoA);
+			}
+			
+			if (dadosLinha[0].equals("C")) {
+				//System.out.println(dadosLinha[1]);
+				int valor = Integer.parseInt(dadosLinha[1]);
+				grupoC =  grupoC + valor;
+				//System.out.println(grupoA);
+			}
+			
+			if (dadosLinha[0].equals("D")) {
+				//System.out.println(dadosLinha[1]);
+				int valor = Integer.parseInt(dadosLinha[1]);
+				grupoD =  grupoD + valor;
+				//System.out.println(grupoA);
+			}
+			if (dadosLinha[0].equals("E")) {
+				//System.out.println(dadosLinha[1]);
+				int valor = Integer.parseInt(dadosLinha[1]);
+				grupoE =  grupoE + valor;
+				//System.out.println(grupoA);
+			}
+			if (dadosLinha[0].equals("F")) {
+				//System.out.println(dadosLinha[1]);
+				int valor = Integer.parseInt(dadosLinha[1]);
+				grupoF =  grupoF + valor;
+				//System.out.println(grupoA);
+			}
 		}
 		System.out.println("Valor total do grupo A: " + grupoA);
+		System.out.println("Valor total do grupo B: " + grupoB);
+		System.out.println("Valor total do grupo B: " + grupoC);
+		System.out.println("Valor total do grupo B: " + grupoD);
+		System.out.println("Valor total do grupo B: " + grupoE);
+		System.out.println("Valor total do grupo B: " + grupoF);
+		
 		leitor.close();
 	}
 }
